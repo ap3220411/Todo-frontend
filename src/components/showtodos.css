@@ -1,0 +1,38 @@
+.gettodo {
+    
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+    border: 1px solid #1d1919;
+    width: auto;
+    height: auto;
+}
+.title{
+    font-family: "Ice Prawn Book";
+    text-transform: capitalize;
+    padding: 10;
+   
+}
+
+.discription{
+    text-transform: capitalize;
+
+}
+.status{
+    font-weight: bold;
+}
+.getbutten{
+    font-size: 15px;
+    width: auto;
+    background-color: rgb(38, 38, 244);
+    
+    
+}
+.mainbutton{
+    /* display: flex; */
+   padding: 10px;
+}
+.getbutten:hover{
+    background-color: rgb(38, 38, 244);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}

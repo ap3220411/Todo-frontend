@@ -1,0 +1,85 @@
+.homes{
+  background-color: aquamarine;
+ height: 100vh;  
+}
+
+.homeheader{
+    font-family: "Ice Prawn Book";
+    text-transform: uppercase;
+    padding: 50px;
+}
+.logout{
+    background-color: rgb(69, 69, 223);
+    width: auto;
+    font-size: 15px;
+    padding: 10px;
+}
+.logout:hover{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  background-color: blue;
+}
+.home{
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+
+  padding: 10;
+  margin: auto;
+  border: 2px solid #d5d5d5;
+  width: 350px;
+  height: 350px;
+ border-radius: 4px;
+
+}
+
+.hometodo
+{
+    width: 80%;
+    font-size: 20px;
+  padding: 15px;
+ 
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  padding: 10px;
+  background-color: white;
+}
+.header{
+    padding: 10px;
+    font-family: Slab serifs ;
+    font-size: 25px;
+}
+.textarea{
+    width: 80%;
+    font-size: medium;
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  background-color: white;
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  font-size: 20px;
+  padding: 10px;
+}
+.textarea:hover{
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+}
+.addbutten{
+    background-color: rgb(28, 25, 25);
+    padding: 5px;
+    margin-bottom: auto;
+}
+.addbutten:hover{
+    background-color: rgb(28, 25, 25);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+.show{
+    display: flex;
+    flex-wrap: wrap;
+      gap: 80px;
+      margin: auto;
+      
+
+}

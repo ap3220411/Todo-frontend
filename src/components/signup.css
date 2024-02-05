@@ -1,0 +1,91 @@
+.mainlogin1 {
+
+    background-image: url("./logo/bg2.png"); /* Replace with the correct path to your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+  
+    align-items: center;
+    height: 100vh;
+  }
+  .log2 {
+   
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    width: 450px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: 90px;
+  }
+  
+  
+  .line4 {
+    width: 61px;
+    height: 6px;
+    background: #010101;
+    border-radius: 8px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  
+  
+  h1 {
+      text-align: center;
+      color: #333;
+  }
+  
+  
+  input {
+      width: 95%;
+      font-size: medium;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  input:hover{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+
+  }
+  
+  button {
+     background-color: #45a049;
+      color: white;
+      cursor: pointer;
+      padding: 10px;
+      border-radius: 8px;
+     width: 130px;
+      font-weight: bold;
+      font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  
+  }
+  .link5 {
+    margin-left: auto;
+   width: 240px;
+   font-weight: 700;
+    font-size: 19px;
+
+  }
+  .link5:hover{
+    
+      color: #ccc;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      font-weight: 700;
+      
+  }
+  
+  .img3 {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+  }
+  
