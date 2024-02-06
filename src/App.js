@@ -15,7 +15,7 @@ function App() {
   const login = (email, password) => {
     //try to login...
 
-    fetch("http://localhost:4050/auth/login", {
+    fetch("https://todo-backend-m24s.onrender.com/auth/login", {
       method: "POST",
       headers: {
         "content-Type": "application/json",
@@ -45,7 +45,7 @@ function App() {
   };
 
   const signup = (name, email, password) => {
-    fetch("http://localhost:4050/auth/signup", {
+    fetch("https://todo-backend-m24s.onrender.com/auth/signup", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -59,7 +59,7 @@ function App() {
       .then((res) => res.json())
       .then((data) => {
         if (data.success == true) {
-          alert("Account Verify");
+          alert("Verify Email");
           Navigate("/");
         } else {
           alert(data.message);
@@ -69,7 +69,7 @@ function App() {
   };
 
   const addtodos = (Title, Description) => {
-    fetch("http://localhost:4050/todo/add-todo", {
+    fetch("https://todo-backend-m24s.onrender.com/todo/add-todo", {
       method: "POST",
       headers: {
         "content-Type": "application/json",
@@ -98,7 +98,7 @@ function App() {
     //if user  not exixt so go back login page
     if (!user) return;
 
-    fetch("http://localhost:4050/todo/fetch-todo", {
+    fetch("https://todo-backend-m24s.onrender.com/todo/fetch-todo", {
       method: "GET",
       headers: {
         "content-Type": "application/json",
@@ -119,7 +119,7 @@ function App() {
   };
 
   const DeleteTodo = (todoid) => {
-    fetch(`http://localhost:4050/todo/delete-todo/${todoid}`, {
+    fetch(`https://todo-backend-m24s.onrender.com/todo/delete-todo/${todoid}`, {
       method: "DELETE",
       headers: {
         "content-Type": "application/json",
@@ -143,7 +143,7 @@ function App() {
   };
 
   const markComplete = (todoid) => {
-    fetch(`http://localhost:4050/todo/update-todo/${todoid}`, {
+    fetch(`https://todo-backend-m24s.onrender.com/todo/update-todo/${todoid}`, {
       method: "PUT",
       headers: {
         "content-Type": "application/json",
