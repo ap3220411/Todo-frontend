@@ -12,6 +12,7 @@ function Signup() {
 
   const inlineStyles = {
     textDecoration: "none",
+    color:"blue"
   };
 
   const { signup } = useContext(TodoContext);
@@ -29,7 +30,7 @@ function Signup() {
         <div>
           <label>
             <input
-            value={name}
+              value={name}
               type="text"
               placeholder="Enter Full Name"
               onChange={(e) => setName(e.currentTarget.value)}
@@ -44,14 +45,13 @@ function Signup() {
               value={email}
               placeholder="Enter email"
               onChange={(e) => setEmail(e.currentTarget.value)}
-              
             />
           </label>
         </div>
         <br></br>
         <label>
           <input
-          value={password}
+            value={password}
             type="password"
             placeholder="Password"
             onChange={(e) => setPassword(e.currentTarget.value)}
@@ -59,19 +59,28 @@ function Signup() {
         </label>
 
         <br></br>
-        <div className="link5">
-          <Link to="/" style={inlineStyles}>
-            {" "}
-            Already Have Account
-          </Link>
-        </div>
+
         <br />
         <br />
 
-        <button onClick={() => {signup(name, email, password)
-        ;setName("");setEmail("");setPassword("");}}>signup</button>
+        <button
+          onClick={() => {
+            signup(name, email, password);
+            setName("");
+            setEmail("");
+            setPassword("");
+          }}
+        >
+          signup
+        </button>
 
         <br></br>
+        <br></br>
+        <div className="link5">
+          <Link to="/" style={inlineStyles}>
+          Already Have Account? Iogin
+          </Link>
+        </div>
       </div>
     </div>
   );

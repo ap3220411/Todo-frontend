@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <div className="homes">
-      <div className="main">
+       <div className="main">
         <div className="mainhome">
           <h1 className="homeheader">Welcome {user && user.name}</h1>
 
@@ -56,7 +56,7 @@ export default function Home() {
             <br />
             <br />
             <button
-              className="addbutten"
+               className="addbutten"
               onClick={() => {
                 addtodos(Title, Description);
                 setDescription("");

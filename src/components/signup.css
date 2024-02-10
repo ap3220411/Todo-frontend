@@ -1,6 +1,6 @@
 .mainlogin1 {
 
-    background-image: url("./logo/bg2.png"); /* Replace with the correct path to your image */
+    background-image: url("./logo/signup.avif"); /* Replace with the correct path to your image */
     background-size: cover;
     background-position: center;
     display: flex;
@@ -11,10 +11,12 @@
   }
   .log2 {
    
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 1);
     width: 450px;
     padding: 20px;
     margin-left: auto;
+    background-color: rgb(215, 227, 236);
+    border-radius: 10px;
    
   }
   
@@ -67,8 +69,8 @@
   
   }
   .link5 {
-    margin-left: auto;
-   width: 240px;
+    margin: auto;
+   width: auto;
    font-weight: 700;
     font-size: 19px;
 
@@ -76,7 +78,7 @@
   .link5:hover{
     
       color: #ccc;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       font-weight: 700;
       
   }

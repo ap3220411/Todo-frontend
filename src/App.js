@@ -4,6 +4,10 @@ import "./App.css";
 import TodoContext from "./todoContext";
 import { Route, Routes, useNavigate } from "react-router-dom";
 
+import ForgotPassword from "./components/otpFrom";
+import ChangePassword from "./components/changePassword";
+
+
 import Home from "./components/home";
 import { useEffect, useState } from "react";
 
@@ -11,6 +15,7 @@ function App() {
   const Navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [todos, setTodos] = useState([]);
+
 
   const login = (email, password) => {
     //try to login...
@@ -166,6 +171,61 @@ function App() {
       });
   };
 
+  const ForgetPassword = (email) => {
+
+    fetch("https://todo-backend-m24s.onrender.com/auth/otp-send", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        email
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success == true) {
+          alert("Send Otp");
+          Navigate("/change-password");
+        } else {
+          alert(data.message);
+        }
+      })
+      .catch((err) => console.log("error", err.message));
+  };
+
+  const changePassword = (email, otpcode, password) => {
+
+    fetch("https://todo-backend-m24s.onrender.com/auth/change-Password", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+
+        email, otpcode,
+        password
+      }),
+    })
+      .then((res) => res.json())
+      .then((data) => {
+        if (data.success == true) {
+          alert("Password change successfully");
+          Navigate("/");
+        } else {
+          alert(data.message);
+        }
+      })
+      .catch((err) => console.log("error", err.message));
+  }
+
+
+
+
+
+
+
+
   //if user login in first time or reload the  then he cheack if your daitals in local storage and if they are change
   useEffect(() => {
     if (localStorage.getItem("userdata")) {
@@ -199,12 +259,17 @@ function App() {
         DeleteTodo,
         markComplete,
         Logout,
+        ForgetPassword,
+        changePassword
       }}
     >
       <Routes>
         <Route path="/" element={<Login />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/Home" element={<Home />} />
+
+        <Route path="/Forget-password" element={<ForgotPassword />} />
+        <Route path="/change-password" element={<ChangePassword />} />
       </Routes>
     </TodoContext.Provider>
   );
