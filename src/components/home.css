@@ -1,5 +1,10 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
 .homes{
-  background-color: white;
+  background-color:lightyello;
  height: 100%;  
 }
 
